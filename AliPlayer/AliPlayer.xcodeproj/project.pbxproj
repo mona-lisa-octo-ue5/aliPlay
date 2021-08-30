@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64898A4026DCA8970031E7A6 /* LSPlayScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64898A3F26DCA8970031E7A6 /* LSPlayScrollView.m */; };
 		64E14AB326D8E189009BFEE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E14AB226D8E189009BFEE8 /* AppDelegate.m */; };
 		64E14AB626D8E189009BFEE8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E14AB526D8E189009BFEE8 /* SceneDelegate.m */; };
 		64E14AB926D8E189009BFEE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E14AB826D8E189009BFEE8 /* ViewController.m */; };
@@ -14,9 +15,12 @@
 		64E14ABE26D8E18B009BFEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E14ABD26D8E18B009BFEE8 /* Assets.xcassets */; };
 		64E14AC126D8E18B009BFEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E14ABF26D8E18B009BFEE8 /* LaunchScreen.storyboard */; };
 		64E14AC426D8E18B009BFEE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E14AC326D8E18B009BFEE8 /* main.m */; };
+		8F3F29E826EF27CBB9A2A4B1 /* libPods-AliPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAA45BC4A354A5B50A8B43D /* libPods-AliPlayer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64898A3E26DCA8970031E7A6 /* LSPlayScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSPlayScrollView.h; sourceTree = "<group>"; };
+		64898A3F26DCA8970031E7A6 /* LSPlayScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSPlayScrollView.m; sourceTree = "<group>"; };
 		64E14AAE26D8E189009BFEE8 /* AliPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E14AB126D8E189009BFEE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64E14AB226D8E189009BFEE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +33,9 @@
 		64E14AC026D8E18B009BFEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E14AC226D8E18B009BFEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64E14AC326D8E18B009BFEE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8AAA45BC4A354A5B50A8B43D /* libPods-AliPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AliPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		901E1FA7A88AD13DF02A14F0 /* Pods-AliPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliPlayer.release.xcconfig"; path = "Target Support Files/Pods-AliPlayer/Pods-AliPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		D3EA73ED190DB51CA8805890 /* Pods-AliPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliPlayer.debug.xcconfig"; path = "Target Support Files/Pods-AliPlayer/Pods-AliPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +43,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3F29E826EF27CBB9A2A4B1 /* libPods-AliPlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EDCB549ED6AE688746491D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3EA73ED190DB51CA8805890 /* Pods-AliPlayer.debug.xcconfig */,
+				901E1FA7A88AD13DF02A14F0 /* Pods-AliPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		64E14AA526D8E189009BFEE8 = {
 			isa = PBXGroup;
 			children = (
 				64E14AB026D8E189009BFEE8 /* AliPlayer */,
 				64E14AAF26D8E189009BFEE8 /* Products */,
+				0EDCB549ED6AE688746491D8 /* Pods */,
+				A3DD21B30B772353A05D396B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +87,8 @@
 				64E14AB526D8E189009BFEE8 /* SceneDelegate.m */,
 				64E14AB726D8E189009BFEE8 /* ViewController.h */,
 				64E14AB826D8E189009BFEE8 /* ViewController.m */,
+				64898A3E26DCA8970031E7A6 /* LSPlayScrollView.h */,
+				64898A3F26DCA8970031E7A6 /* LSPlayScrollView.m */,
 				64E14ABA26D8E189009BFEE8 /* Main.storyboard */,
 				64E14ABD26D8E18B009BFEE8 /* Assets.xcassets */,
 				64E14ABF26D8E18B009BFEE8 /* LaunchScreen.storyboard */,
@@ -76,6 +98,14 @@
 			path = AliPlayer;
 			sourceTree = "<group>";
 		};
+		A3DD21B30B772353A05D396B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AAA45BC4A354A5B50A8B43D /* libPods-AliPlayer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E14AC726D8E18B009BFEE8 /* Build configuration list for PBXNativeTarget "AliPlayer" */;
 			buildPhases = (
+				003EB69CCC3FDCBC3ABF2C9E /* [CP] Check Pods Manifest.lock */,
 				64E14AAA26D8E189009BFEE8 /* Sources */,
 				64E14AAB26D8E189009BFEE8 /* Frameworks */,
 				64E14AAC26D8E189009BFEE8 /* Resources */,
+				A82B76F43CD293E48636320A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +172,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		003EB69CCC3FDCBC3ABF2C9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AliPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A82B76F43CD293E48636320A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AliPlayer/Pods-AliPlayer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AliPlayer/Pods-AliPlayer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AliPlayer/Pods-AliPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64E14AAA26D8E189009BFEE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,6 +222,7 @@
 				64E14AB926D8E189009BFEE8 /* ViewController.m in Sources */,
 				64E14AB326D8E189009BFEE8 /* AppDelegate.m in Sources */,
 				64E14AC426D8E18B009BFEE8 /* main.m in Sources */,
+				64898A4026DCA8970031E7A6 /* LSPlayScrollView.m in Sources */,
 				64E14AB626D8E189009BFEE8 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +363,7 @@
 		};
 		64E14AC826D8E18B009BFEE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3EA73ED190DB51CA8805890 /* Pods-AliPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +383,7 @@
 		};
 		64E14AC926D8E18B009BFEE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901E1FA7A88AD13DF02A14F0 /* Pods-AliPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
