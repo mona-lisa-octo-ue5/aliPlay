@@ -257,6 +257,4 @@
 
 
 
-@implementation LSVideoListModel
 
-@end

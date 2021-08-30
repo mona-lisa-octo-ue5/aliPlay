@@ -6,9 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <JSONModel/JSONModel.h>
 #import <MJRefresh/MJRefresh.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "LSModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -47,18 +47,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-@interface LSVideoListModel : JSONModel
 
-@property (nonatomic, strong) NSString *coverUrl;
-@property (nonatomic, strong) NSString *firstFrameUrl;
-@property (nonatomic, strong) NSString *videoId;
-@property (nonatomic, assign) NSInteger index;
-@property (nonatomic, assign) NSInteger page;
-@property (nonatomic, strong) NSUUID *uuid;
-@property (nonatomic, strong) NSString *fileUrl;
-@property (nonatomic, strong) NSString *descriptionStr;
-@property (nonatomic, strong) NSString *title;
-
-@end
 
 NS_ASSUME_NONNULL_END

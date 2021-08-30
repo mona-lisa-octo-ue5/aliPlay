@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		64898A4026DCA8970031E7A6 /* LSPlayScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64898A3F26DCA8970031E7A6 /* LSPlayScrollView.m */; };
+		64C80B9226DCD8A9006BED12 /* LSBasicVideoRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C80B9126DCD8A9006BED12 /* LSBasicVideoRequestManager.m */; };
+		64C80B9526DCE496006BED12 /* LSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C80B9426DCE496006BED12 /* LSModel.m */; };
 		64E14AB326D8E189009BFEE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E14AB226D8E189009BFEE8 /* AppDelegate.m */; };
 		64E14AB626D8E189009BFEE8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E14AB526D8E189009BFEE8 /* SceneDelegate.m */; };
 		64E14AB926D8E189009BFEE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E14AB826D8E189009BFEE8 /* ViewController.m */; };
@@ -21,6 +23,10 @@
 /* Begin PBXFileReference section */
 		64898A3E26DCA8970031E7A6 /* LSPlayScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSPlayScrollView.h; sourceTree = "<group>"; };
 		64898A3F26DCA8970031E7A6 /* LSPlayScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSPlayScrollView.m; sourceTree = "<group>"; };
+		64C80B9026DCD8A9006BED12 /* LSBasicVideoRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSBasicVideoRequestManager.h; sourceTree = "<group>"; };
+		64C80B9126DCD8A9006BED12 /* LSBasicVideoRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSBasicVideoRequestManager.m; sourceTree = "<group>"; };
+		64C80B9326DCE496006BED12 /* LSModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSModel.h; sourceTree = "<group>"; };
+		64C80B9426DCE496006BED12 /* LSModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSModel.m; sourceTree = "<group>"; };
 		64E14AAE26D8E189009BFEE8 /* AliPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E14AB126D8E189009BFEE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64E14AB226D8E189009BFEE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,7 +62,6 @@
 				D3EA73ED190DB51CA8805890 /* Pods-AliPlayer.debug.xcconfig */,
 				901E1FA7A88AD13DF02A14F0 /* Pods-AliPlayer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,8 +92,12 @@
 				64E14AB526D8E189009BFEE8 /* SceneDelegate.m */,
 				64E14AB726D8E189009BFEE8 /* ViewController.h */,
 				64E14AB826D8E189009BFEE8 /* ViewController.m */,
+				64C80B9326DCE496006BED12 /* LSModel.h */,
+				64C80B9426DCE496006BED12 /* LSModel.m */,
 				64898A3E26DCA8970031E7A6 /* LSPlayScrollView.h */,
 				64898A3F26DCA8970031E7A6 /* LSPlayScrollView.m */,
+				64C80B9026DCD8A9006BED12 /* LSBasicVideoRequestManager.h */,
+				64C80B9126DCD8A9006BED12 /* LSBasicVideoRequestManager.m */,
 				64E14ABA26D8E189009BFEE8 /* Main.storyboard */,
 				64E14ABD26D8E18B009BFEE8 /* Assets.xcassets */,
 				64E14ABF26D8E18B009BFEE8 /* LaunchScreen.storyboard */,
@@ -220,6 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E14AB926D8E189009BFEE8 /* ViewController.m in Sources */,
+				64C80B9526DCE496006BED12 /* LSModel.m in Sources */,
+				64C80B9226DCD8A9006BED12 /* LSBasicVideoRequestManager.m in Sources */,
 				64E14AB326D8E189009BFEE8 /* AppDelegate.m in Sources */,
 				64E14AC426D8E18B009BFEE8 /* main.m in Sources */,
 				64898A4026DCA8970031E7A6 /* LSPlayScrollView.m in Sources */,
